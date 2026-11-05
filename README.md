@@ -9,8 +9,9 @@ The project brings together my profile, education, featured software projects, a
 - **[StockFlow](https://github.com/yabetsalelign/Stockflow)** — Inventory and sales management application for wholesale workflows.
 - **[SuperDimm](https://github.com/yabetsalelign/superdimm)** — Telecom service management platform focused on customer requests and operational workflows.
 - **[Next](https://github.com/yabetsalelign/Next)** — Productivity application built around manageable tasks and flexible routines.
+- **[Recovery Tracker](https://github.com/yabetsalelign/recovery-tracker)** — Local-first application for recording recovery goals, daily check-ins, and reflections.
 
-Screenshots of the three applications are included in the portfolio.
+Screenshots of the four applications are included in the portfolio.
 
 ## HTML5 Features
 
@@ -36,9 +37,10 @@ portfolio/
 ├── README.md
 ├── images/
 │   └── projects/
-│       ├── stockflow-home.png
-│       ├── superdimm-home.png
-│       └── next-home.png
+│       ├── next.jpg
+│       ├── recovery-tracker.jpg
+│       ├── stockflow.jpg
+│       └── superdimm-home.png
 └── media/
     ├── intro.mp3
     ├── project-demo.mp4

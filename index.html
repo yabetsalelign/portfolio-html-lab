@@ -10,6 +10,7 @@
     <meta name="author" content="Yabets Alelign">
     <title>Yabets Alelign | Portfolio</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="canvas.js" defer></script>
 </head>
 
 <body id="top">
@@ -24,7 +25,7 @@
         <dialog id="hireDialog">
             <h2>Available for internships</h2>
             <p>I am available for internships and freelance web projects from June 2027.</p>
-            <p><a href="#contact">Send me a message</a> or <a href="files/cv.pdf" download>download my CV</a>.</p>
+            <p><a href="#contact">Send me a message</a>.</p>
             <button type="button" onclick="document.getElementById('hireDialog').close()">Close</button>
         </dialog>
 
@@ -41,8 +42,17 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>I am a 3<sup>rd</sup> year <strong>Software Engineering</strong> student. I <em>really</em> enjoy
-                building websites, and my current goal is to <mark>become a full-stack web developer</mark>.</p>
+            <p>I am a fifth-year <strong>Software Engineering</strong> student at Addis Ababa Science and Technology
+                University. I am interested in building useful software, thoughtful user interfaces, and reliable
+                applications.</p>
+            <p>I enjoy working across the frontend and backend, and exploring how design decisions, application logic,
+                and data fit together.</p>
+            <p>I am currently learning:</p>
+            <ul>
+                <li>UI/UX and visual design fundamentals</li>
+                <li>Software engineering practices, testing, and maintainable architecture</li>
+                <li>Building accessible, clear, and practical interfaces</li>
+            </ul>
             <p>Languages I have used: <b>Python</b>, <b>C++</b> and <i>a little</i> JavaScript. I am now learning <abbr
                     title="HyperText Markup Language">HTML</abbr>.</p>
             <p>Fun fact: I drink 2 litres of H<sub>2</sub>O while coding every day.</p>
@@ -138,25 +148,54 @@
         <section id="projects">
             <h2>Projects</h2>
             <article>
-                <h3>Simple Calculator</h3>
-                <img src="images/project-demo-poster.jpg" alt="Simple Calculator interface screenshot" width="400"
-                    height="225">
-                <p>A calculator that adds, subtracts, multiplies and divides.</p>
+                <h3>StockFlow</h3>
+                <p>A mobile-first inventory and sales app for a small wholesale workflow. It records stock movements,
+                    sales, and customer payments as transactions.</p>
+                <p><strong>Technologies:</strong> TypeScript, React, Next.js, Supabase, PostgreSQL</p>
+                <p><a href="https://github.com/yabetsalelign/Stockflow">View StockFlow on GitHub</a></p>
+                <figure>
+                    <img src="images/projects/stockflow.jpg" alt="StockFlow application homepage" width="288"
+                        height="640">
+                    <figcaption>StockFlow application homepage</figcaption>
+                </figure>
             </article>
 
             <article>
-                <h3>Library Management System</h3>
-                <img src="images/project-movemate.png" alt="Library Management System screenshot" width="400"
-                    height="250">
-                <p>A console program for borrowing and returning books.</p>
+                <h3>SuperDimm</h3>
+                <p>A telecom service platform connecting customer service requests with internal operations workflows
+                    and role-based access.</p>
+                <p><strong>Technologies:</strong> Next.js, TypeScript, Prisma, SQLite</p>
+                <p><a href="https://github.com/yabetsalelign/superdimm">View SuperDimm on GitHub</a></p>
+                <figure>
+                    <img src="images/projects/superdimm-home.png"
+                        alt="SuperDimm customer portal sign-in page" width="288" height="568">
+                    <figcaption>SuperDimm customer portal sign-in page</figcaption>
+                </figure>
             </article>
 
             <article>
-                <h3>My First Program</h3>
-                <p>The first thing I wrote in Python was <code>print("Hello, World!")</code>. Later I wrote this loop:
-                </p>
-                <pre><code>for i in range(3):
-    print("Hello", i)</code></pre>
+                <h3>Next</h3>
+                <p>A productivity app built around manageable next steps, flexible routines, and returning to work
+                    without streak pressure.</p>
+                <p><strong>Technologies:</strong> Next.js, React, TypeScript, Tailwind CSS</p>
+                <p><a href="https://github.com/yabetsalelign/Next">View Next on GitHub</a></p>
+                <figure>
+                    <img src="images/projects/next.jpg" alt="Next productivity application homepage" width="288"
+                        height="640">
+                    <figcaption>Next productivity application homepage</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>Recovery Tracker</h3>
+                <p>A local-first app for recording recovery goals, daily check-ins, reflections, and progress.</p>
+                <p><strong>Technologies:</strong> React, TypeScript, Vite, Tailwind CSS</p>
+                <p><a href="https://github.com/yabetsalelign/recovery-tracker">View Recovery Tracker on GitHub</a></p>
+                <figure>
+                    <img src="images/projects/recovery-tracker.jpg" alt="Recovery Tracker application homepage"
+                        width="288" height="640">
+                    <figcaption>Recovery Tracker application homepage</figcaption>
+                </figure>
             </article>
 
             <p><a href="projects.html">See all my projects &rarr;</a></p>
@@ -164,70 +203,49 @@
 
         <section id="education">
             <h2>Education</h2>
-            <h3>BSc in Software Engineering</h3>
-            <p><abbr title="Addis Ababa Science and Technology University">AASTU</abbr>, <time
-                    datetime="2023-09">September 2023</time> &ndash; present</p>
+            <h3>B.Sc. in Software Engineering</h3>
+            <p>Addis Ababa Science and Technology University (<abbr
+                    title="Addis Ababa Science and Technology University">AASTU</abbr>)</p>
+            <p><time datetime="2023-09">September 2023</time> &ndash; Present</p>
+            <p>Current level: Fifth Year (Year V)</p>
+            <p>Expected graduation: 2027</p>
+            <p>Completed the ALX Front-End Engineering program.</p>
 
             <p>
-                <label for="degree">Degree progress:</label>
-                <progress id="degree" value="40" max="100">40%</progress> 40%
+                <label for="degree">Progress element demonstration (illustrative only; not an actual academic progress calculation):</label>
+                <progress id="degree" max="100">Illustrative progress</progress>
             </p>
 
-            <h3>Academic Record</h3>
+            <h3>Current Coursework</h3>
             <table border="1" cellpadding="8" cellspacing="0">
-                <caption>BSc in Software Engineering Course Summary</caption>
+                <caption>Current Software Engineering courses</caption>
                 <thead>
                     <tr>
-                        <th scope="col">Year</th>
-                        <th scope="col">Semester</th>
-                        <th scope="col">Course</th>
-                        <th scope="col">Credit Hours</th>
-                        <th scope="col">Grade</th>
+                        <th scope="col">Day</th>
+                        <th scope="col">Courses</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="rowgroup" rowspan="4">Year 1</th>
-                        <td rowspan="2">Semester I</td>
-                        <td>Fundamentals of Programming</td>
-                        <td>5</td>
-                        <td>A</td>
+                        <th scope="row">Tuesday</th>
+                        <td>
+                            <ul>
+                                <li>Software Configuration Management</li>
+                                <li>Computer System Security</li>
+                                <li>Distributed Systems</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Applied Mathematics I</td>
-                        <td>4</td>
-                        <td>B+</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">Semester II</td>
-                        <td>Object Oriented Programming</td>
-                        <td>4</td>
-                        <td>A</td>
-                    </tr>
-                    <tr>
-                        <td>Discrete Mathematics</td>
-                        <td>3</td>
-                        <td>B</td>
-                    </tr>
-                    <tr>
-                        <th scope="rowgroup" rowspan="2">Year 2</th>
-                        <td rowspan="2">Semester I</td>
-                        <td>Data Structures &amp; Algorithms</td>
-                        <td>5</td>
-                        <td>A-</td>
-                    </tr>
-                    <tr>
-                        <td>Internet Programming I</td>
-                        <td>4</td>
-                        <td>A</td>
+                        <th scope="row">Wednesday</th>
+                        <td>
+                            <ul>
+                                <li>Simulation and Modeling</li>
+                                <li>Open Source Software Paradigms</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
-                <tfoot>
-                    <tr>
-                        <th colspan="3" scope="row">Total credit hours</th>
-                        <td colspan="2">25</td>
-                    </tr>
-                </tfoot>
             </table>
         </section>
 
@@ -237,15 +255,13 @@
             <p>Email: <a href="mailto:yabetsalelign@gmail.com">yabetsalelign@gmail.com</a></p>
             <p>Phone: <a href="tel:+251911223344">+251&nbsp;911&nbsp;223&nbsp;344</a></p>
             <p>GitHub: <a href="https://github.com/yabetsalelign">github.com/yabetsalelign</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/yabetsalelign">linkedin.com/in/yabetsalelign</a></p>
-            <p>Download my <abbr title="Curriculum Vitae">CV</abbr> (<a href="files/cv.pdf" download>PDF</a>).</p>
-
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yabets-alelign-820450327/">linkedin.com/in/yabets-alelign-820450327</a></p>
             <h3>Connect with me</h3>
             <img src="images/connect-banner.png" usemap="#connectmap" alt="Connect banner: GitHub, LinkedIn, Email"
                 width="600" height="200">
             <map name="connectmap">
                 <area shape="rect" coords="20,40,180,160" href="https://github.com/yabetsalelign" alt="GitHub">
-                <area shape="circle" coords="300,100,70" href="https://www.linkedin.com/in/yabetsalelign"
+                <area shape="circle" coords="300,100,70" href="https://www.linkedin.com/in/yabets-alelign-820450327/"
                     alt="LinkedIn">
                 <area shape="rect" coords="420,40,580,160" href="mailto:yabetsalelign@gmail.com" alt="Email">
             </map>
@@ -333,6 +349,11 @@
                 <button type="submit">Send Message</button>
                 <button type="reset">Clear</button>
             </form>
+
+            <h3>Password input demonstration</h3>
+            <p>This password field is for demonstration only. It is outside the contact form and is not submitted.</p>
+            <label for="password-demo">Try a password input:</label>
+            <input type="password" id="password-demo" autocomplete="off">
         </section>
     </main>
 
@@ -342,61 +363,6 @@
         <p><a href="#top">Back to top</a></p>
     </footer>
 
-    <script>
-        // 1. Personal logo drawing
-        const canvas = document.getElementById('logo');
-        if (canvas) {
-            const ctx = canvas.getContext('2d');
-            // Blue square background: x, y, width, height
-            ctx.fillStyle = "#1f5fa8";
-            ctx.fillRect(0, 0, 120, 120);
-
-            // White circle: centre x, centre y, radius, start angle, end angle
-            ctx.beginPath();
-            ctx.arc(60, 60, 45, 0, 2 * Math.PI);
-            ctx.fillStyle = "white";
-            ctx.fill();
-
-            // Initials in the middle
-            ctx.fillStyle = "#1f5fa8";
-            ctx.font = "bold 36px Arial";
-            ctx.textAlign = "center";
-            ctx.textBaseline = "middle";
-            ctx.fillText("YA", 60, 62);
-        }
-
-        // 2. Bar chart of skills (Lab 14 Your turn)
-        const chart = document.getElementById('skillsChart');
-        if (chart) {
-            const chartCtx = chart.getContext('2d');
-            const skillsData = [
-                { name: 'HTML', val: 0.8 },
-                { name: 'Python', val: 0.7 },
-                { name: 'JS', val: 0.2 },
-                { name: 'CSS', val: 0.5 }
-            ];
-            const maxBarHeight = 90;
-            const baselineY = 120;
-            const barWidth = 45;
-            const startX = 25;
-            const gap = 65;
-
-            chartCtx.font = "14px Arial";
-            chartCtx.textAlign = "center";
-
-            skillsData.forEach((skill, index) => {
-                const x = startX + index * gap;
-                const height = skill.val * maxBarHeight;
-                const y = baselineY - height;
-
-                chartCtx.fillStyle = "#1f5fa8";
-                chartCtx.fillRect(x, y, barWidth, height);
-
-                chartCtx.fillStyle = "#333333";
-                chartCtx.fillText(skill.name, x + barWidth / 2, baselineY + 18);
-            });
-        }
-    </script>
 </body>
 
 </html>

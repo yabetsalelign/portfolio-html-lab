@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Details of every project built by Yabets Alelign, including calculator and library management system.">
+        content="Software projects by Yabets Alelign: StockFlow, SuperDimm, and Next.">
     <meta name="keywords"
-        content="Yabets Alelign, portfolio, software engineering, projects, Simple Calculator, Library Management System">
+        content="Yabets Alelign, portfolio, software engineering, StockFlow, SuperDimm, Next">
     <meta name="author" content="Yabets Alelign">
     <title>My Projects | Yabets Alelign</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -30,41 +30,117 @@
                 <thead>
                     <tr>
                         <th scope="col">Project</th>
-                        <th scope="col">Language</th>
-                        <th scope="col">Year</th>
+                        <th scope="col">Focus</th>
+                        <th scope="col">Technologies</th>
                         <th scope="col">Link</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Simple Calculator</td>
-                        <td>Python</td>
-                        <td><time datetime="2024">2024</time></td>
-                        <td><a href="#calculator">Details</a></td>
+                        <td>StockFlow</td>
+                        <td>Wholesale inventory and sales</td>
+                        <td>TypeScript, React, Next.js, Supabase, PostgreSQL</td>
+                        <td><a href="#stockflow">Details</a></td>
                     </tr>
                     <tr>
-                        <td>Library Management System</td>
-                        <td>C++</td>
-                        <td><time datetime="2025">2025</time></td>
-                        <td><a href="#library">Details</a></td>
+                        <td>SuperDimm</td>
+                        <td>Telecom service and operations workflows</td>
+                        <td>Next.js, TypeScript, Prisma, SQLite</td>
+                        <td><a href="#superdimm">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>Next</td>
+                        <td>Flexible productivity and routines</td>
+                        <td>Next.js, React, TypeScript, Tailwind CSS</td>
+                        <td><a href="#next">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>Recovery Tracker</td>
+                        <td>Recovery goals, check-ins, and reflections</td>
+                        <td>React, TypeScript, Vite, Tailwind CSS</td>
+                        <td><a href="#recovery-tracker">Details</a></td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
                         <th colspan="3" scope="row">Total projects</th>
-                        <td>2</td>
+                        <td>4</td>
                     </tr>
                 </tfoot>
             </table>
         </section>
 
-        <article id="calculator">
-            <h2>Simple Calculator</h2>
-            <img src="images/project-demo-poster.jpg" alt="Simple Calculator interface screenshot" width="400"
-                height="225">
-            <p>A calculator that adds, subtracts, multiplies and divides.</p>
+        <article id="stockflow">
+            <h2>StockFlow</h2>
+            <p>A mobile-first inventory and sales app designed as a digital logbook for a small wholesale operation.
+                Stock changes are recorded as transactions rather than edited manually.</p>
+            <p><strong>Technologies:</strong> TypeScript, React, Next.js, Supabase, PostgreSQL</p>
+            <p><a href="https://github.com/yabetsalelign/Stockflow">View StockFlow on GitHub</a></p>
+            <details>
+                <summary>Project focus</summary>
+                <p>The workflows cover stock, sales, customer payments, and manager and warehouse staff roles. The
+                    interface includes English and Amharic localization.</p>
+            </details>
+            <figure>
+                <img src="images/projects/stockflow.jpg" alt="StockFlow application homepage" width="288" height="640">
+                <figcaption>StockFlow application homepage</figcaption>
+            </figure>
+        </article>
 
-            <h3>Watch the demo</h3>
+        <article id="superdimm">
+            <h2>SuperDimm</h2>
+            <p>A telecom service platform connecting customer service requests with internal operations workflows.</p>
+            <p><strong>Technologies:</strong> Next.js, TypeScript, Prisma, SQLite</p>
+            <p><a href="https://github.com/yabetsalelign/superdimm">View SuperDimm on GitHub</a></p>
+            <details>
+                <summary>Project focus</summary>
+                <p>Customers can report and follow service cases. Operations staff can review and manage cases, with
+                    distinct customer and staff workflows.</p>
+            </details>
+            <figure>
+                <img src="images/projects/superdimm-home.png"
+                    alt="SuperDimm customer portal sign-in page" width="288" height="568">
+                <figcaption>SuperDimm customer portal sign-in page</figcaption>
+            </figure>
+        </article>
+
+        <article id="next">
+            <h2>Next</h2>
+            <p>A productivity app focused on manageable next actions, flexible routines, and returning to work without
+                streak pressure.</p>
+            <p><strong>Technologies:</strong> Next.js, React, TypeScript, Tailwind CSS</p>
+            <p><a href="https://github.com/yabetsalelign/Next">View Next on GitHub</a></p>
+            <details>
+                <summary>Project focus</summary>
+                <p>The app is designed to help people start, continue, rest, and return without guilt or catch-up debt.</p>
+            </details>
+            <figure>
+                <img src="images/projects/next.jpg" alt="Next productivity application homepage" width="288"
+                    height="640">
+                <figcaption>Next productivity application homepage</figcaption>
+            </figure>
+        </article>
+
+        <article id="recovery-tracker">
+            <h2>Recovery Tracker</h2>
+            <p>A local-first app for recording recovery goals, daily check-ins, reflections, and progress.</p>
+            <p><strong>Technologies:</strong> React, TypeScript, Vite, Tailwind CSS</p>
+            <p><a href="https://github.com/yabetsalelign/recovery-tracker">View Recovery Tracker on GitHub</a></p>
+            <details>
+                <summary>Project focus</summary>
+                <p>Personal recovery records stay in local browser storage, with tools for check-ins, reflections, and
+                    reviewing progress.</p>
+            </details>
+            <figure>
+                <img src="images/projects/recovery-tracker.jpg" alt="Recovery Tracker application homepage" width="288"
+                    height="640">
+                <figcaption>Recovery Tracker application homepage</figcaption>
+            </figure>
+        </article>
+
+        <section id="lab-demo">
+            <h2>HTML5 Video Demonstration</h2>
+            <p>The supplied demo is retained as the lab's multimedia exercise.</p>
             <video controls poster="images/project-demo-poster.jpg" width="640" height="360">
                 <source src="media/project-demo.mp4" type="video/mp4">
                 <source src="media/project-demo.webm" type="video/webm">
@@ -72,44 +148,7 @@
                 Your browser does not support the video tag.
             </video>
 
-            <details>
-                <summary>How I built it</summary>
-                <ol>
-                    <li>Wrote down the four operations the program must support.</li>
-                    <li>Read two numbers and an operator from the user.</li>
-                    <li>Used if/elif to pick the operation.</li>
-                    <li>Handled division by zero with an error message.</li>
-                </ol>
-            </details>
-
-            <h3>Technologies</h3>
-            <ul>
-                <li>Python 3</li>
-                <li>VS Code</li>
-            </ul>
-        </article>
-
-        <article id="library">
-            <h2>Library Management System</h2>
-            <img src="images/project-movemate.png" alt="Library Management System screenshot" width="400" height="250">
-            <p>A console program for borrowing and returning books.</p>
-
-            <details>
-                <summary>How I built it</summary>
-                <ol>
-                    <li>Designed the data structures for books and borrowers in C++.</li>
-                    <li>Created file I/O operations to persist library inventory and checkout records.</li>
-                    <li>Implemented a console menu for searching, borrowing, and returning books.</li>
-                    <li>Handled edge cases like attempting to borrow unavailable copies.</li>
-                </ol>
-            </details>
-
-            <h3>Technologies</h3>
-            <ul>
-                <li>C++</li>
-                <li>Git and GitHub</li>
-            </ul>
-        </article>
+        </section>
 
         <aside id="references">
             <h2>Useful Reference</h2>

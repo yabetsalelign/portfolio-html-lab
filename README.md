@@ -61,7 +61,7 @@ A local development server can also be used to preview the project.
 ## Notes and Limitations
 
 - This is a static HTML project. The contact form retains the required POST and multipart attributes, but there is no server-side endpoint to receive or store submissions.
-- The video files currently have different durations. The shared caption track extends beyond the shorter WebM version.
+- The MP4 and WebM video formats match in content and duration (30 seconds), fully accommodating the 12-second caption track.
 - The YouTube embed may encounter playback restrictions depending on the hosting environment.
 - The audio and external embeds have not been fully verified through browser testing.
 - The degree progress indicator is illustrative and does not represent a calculated academic completion percentage.

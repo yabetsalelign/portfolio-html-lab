@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Yabets Alelign, Software Engineering student and aspiring web developer in Addis Ababa.">
+    <meta name="keywords" content="Yabets Alelign, portfolio, software engineering, web developer, HTML">
+    <meta name="author" content="Yabets Alelign">
+    <title>Yabets Alelign | Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body id="top">
+    <header>
+        <canvas id="logo" width="120" height="120">Yabets Alelign logo</canvas>
+        <h1>Yabets Alelign</h1>
+        <img src="images/profile.jpg" alt="Portrait of Yabets Alelign smiling" title="Yabets Alelign" width="200"
+            height="200">
+        <p>Software Engineering student and aspiring web developer.</p>
+
+        <button type="button" onclick="document.getElementById('hireDialog').showModal()">Hire me</button>
+        <dialog id="hireDialog">
+            <h2>Available for internships</h2>
+            <p>I am available for internships and freelance web projects from June 2027.</p>
+            <p><a href="#contact">Send me a message</a> or <a href="files/cv.pdf" download>download my CV</a>.</p>
+            <button type="button" onclick="document.getElementById('hireDialog').close()">Close</button>
+        </dialog>
+
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#education">Education</a> |
+            <a href="#contact">Contact</a> |
+            <a href="projects.html">All Projects</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a 3<sup>rd</sup> year <strong>Software Engineering</strong> student. I <em>really</em> enjoy
+                building websites, and my current goal is to <mark>become a full-stack web developer</mark>.</p>
+            <p>Languages I have used: <b>Python</b>, <b>C++</b> and <i>a little</i> JavaScript. I am now learning <abbr
+                    title="HyperText Markup Language">HTML</abbr>.</p>
+            <p>Fun fact: I drink 2 litres of H<sub>2</sub>O while coding every day.</p>
+            <p>My favourite tag is &lt;main&gt;, because it tells the browser where the important content is &amp; helps
+                screen readers.</p>
+
+            <h3>Hear my introduction</h3>
+            <audio controls>
+                <source src="media/intro.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <aside>
+            <h2>What Inspires Me</h2>
+            <blockquote>
+                “The best way to predict the future is to invent it.” — Alan Kay
+            </blockquote>
+            <p>My teacher always says <q>practice beats theory</q>, so I code every day.</p>
+            <p>Book I am reading: <cite>Clean Code</cite> by Robert C. Martin</p>
+
+            <h3>A talk I recommend</h3>
+            <iframe src="https://www.youtube.com/embed/fD2BriZ6fB0" width="560" height="315"
+                title="YouTube video: Alan Kay - Normal Considered Harmful" allowfullscreen>
+            </iframe>
+        </aside>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages
+                    <ul type="square">
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                    </ul>
+                </li>
+                <li>Web Development
+                    <ul type="circle">
+                        <li>HTML</li>
+                        <li>CSS (learning)</li>
+                        <li>JavaScript (next)</li>
+                    </ul>
+                </li>
+                <li>Soft Skills
+                    <ul>
+                        <li>Teamwork</li>
+                        <li>Presenting</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Skill Levels</h3>
+            <p>
+                <label for="lvl-html">HTML</label>
+                <meter id="lvl-html" value="0.8" min="0" max="1">80%</meter>
+            </p>
+            <p>
+                <label for="lvl-python">Python</label>
+                <meter id="lvl-python" value="0.7" min="0" max="1">70%</meter>
+            </p>
+            <p>
+                <label for="lvl-js">JavaScript</label>
+                <meter id="lvl-js" value="0.2" min="0" max="1" low="0.3" high="0.7" optimum="1">20%</meter>
+            </p>
+            <p>
+                <label for="lvl-css">CSS</label>
+                <meter id="lvl-css" value="0.5" min="0" max="1">50%</meter>
+            </p>
+
+            <canvas id="skillsChart" width="300" height="150">Bar chart of skill levels</canvas>
+
+            <h3>My Learning Roadmap</h3>
+            <ol type="1">
+                <li>HTML structure and content</li>
+                <li>CSS layout and design</li>
+                <li>JavaScript and the DOM</li>
+                <li>PHP and databases</li>
+                <li>Deploy my portfolio online</li>
+            </ol>
+
+            <h3>Tools I Use</h3>
+            <dl>
+                <dt>VS Code</dt>
+                <dd>The code editor I use for every lab.</dd>
+                <dt>Chrome DevTools</dt>
+                <dd>Inspects the HTML of any page and helps me find mistakes.</dd>
+                <dt>Git and GitHub</dt>
+                <dd>Saves versions of my code and shares my projects online.</dd>
+            </dl>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>Simple Calculator</h3>
+                <img src="images/project-demo-poster.jpg" alt="Simple Calculator interface screenshot" width="400"
+                    height="225">
+                <p>A calculator that adds, subtracts, multiplies and divides.</p>
+            </article>
+
+            <article>
+                <h3>Library Management System</h3>
+                <img src="images/project-movemate.png" alt="Library Management System screenshot" width="400"
+                    height="250">
+                <p>A console program for borrowing and returning books.</p>
+            </article>
+
+            <article>
+                <h3>My First Program</h3>
+                <p>The first thing I wrote in Python was <code>print("Hello, World!")</code>. Later I wrote this loop:
+                </p>
+                <pre><code>for i in range(3):
+    print("Hello", i)</code></pre>
+            </article>
+
+            <p><a href="projects.html">See all my projects &rarr;</a></p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <h3>BSc in Software Engineering</h3>
+            <p><abbr title="Addis Ababa Science and Technology University">AASTU</abbr>, <time
+                    datetime="2023-09">September 2023</time> &ndash; present</p>
+
+            <p>
+                <label for="degree">Degree progress:</label>
+                <progress id="degree" value="40" max="100">40%</progress> 40%
+            </p>
+
+            <h3>Academic Record</h3>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <caption>BSc in Software Engineering Course Summary</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Year</th>
+                        <th scope="col">Semester</th>
+                        <th scope="col">Course</th>
+                        <th scope="col">Credit Hours</th>
+                        <th scope="col">Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="4">Year 1</th>
+                        <td rowspan="2">Semester I</td>
+                        <td>Fundamentals of Programming</td>
+                        <td>5</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Applied Mathematics I</td>
+                        <td>4</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Semester II</td>
+                        <td>Object Oriented Programming</td>
+                        <td>4</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Discrete Mathematics</td>
+                        <td>3</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <th scope="rowgroup" rowspan="2">Year 2</th>
+                        <td rowspan="2">Semester I</td>
+                        <td>Data Structures &amp; Algorithms</td>
+                        <td>5</td>
+                        <td>A-</td>
+                    </tr>
+                    <tr>
+                        <td>Internet Programming I</td>
+                        <td>4</td>
+                        <td>A</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3" scope="row">Total credit hours</th>
+                        <td colspan="2">25</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Address:<br>Addis Ababa,<br>Ethiopia</p>
+            <p>Email: <a href="mailto:yabetsalelign@gmail.com">yabetsalelign@gmail.com</a></p>
+            <p>Phone: <a href="tel:+251911223344">+251&nbsp;911&nbsp;223&nbsp;344</a></p>
+            <p>GitHub: <a href="https://github.com/yabetsalelign">github.com/yabetsalelign</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yabetsalelign">linkedin.com/in/yabetsalelign</a></p>
+            <p>Download my <abbr title="Curriculum Vitae">CV</abbr> (<a href="files/cv.pdf" download>PDF</a>).</p>
+
+            <h3>Connect with me</h3>
+            <img src="images/connect-banner.png" usemap="#connectmap" alt="Connect banner: GitHub, LinkedIn, Email"
+                width="600" height="200">
+            <map name="connectmap">
+                <area shape="rect" coords="20,40,180,160" href="https://github.com/yabetsalelign" alt="GitHub">
+                <area shape="circle" coords="300,100,70" href="https://www.linkedin.com/in/yabetsalelign"
+                    alt="LinkedIn">
+                <area shape="rect" coords="420,40,580,160" href="mailto:yabetsalelign@gmail.com" alt="Email">
+            </map>
+
+            <h3>Where I study</h3>
+            <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=38.790%2C8.880%2C38.830%2C8.910&amp;layer=mapnik"
+                width="600" height="300" title="Map of my university campus">
+            </iframe>
+
+            <h3>Send me a message</h3>
+            <form action="thank-you.html" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <label for="fullname">Full name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Project Details</legend>
+                    <label for="phone">Phone (optional):</label>
+                    <input type="text" id="phone" name="phone" pattern="0[79][0-9]{8}"
+                        title="10 digits starting with 09 or 07">
+                    <br><br>
+
+                    <p>Preferred contact method:</p>
+                    <input type="radio" id="by-email" name="contact-method" value="email" checked>
+                    <label for="by-email">Email</label>
+                    <input type="radio" id="by-phone" name="contact-method" value="phone">
+                    <label for="by-phone">Phone</label>
+                    <br><br>
+
+                    <label for="meeting">Preferred meeting date:</label>
+                    <input type="date" id="meeting" name="meeting" min="2026-11-01">
+                    <br><br>
+
+                    <label for="weeks">Project length (weeks):</label>
+                    <input type="number" id="weeks" name="weeks" min="1" max="52" step="1">
+                    <br><br>
+
+                    <label for="budget">Your budget (ETB):</label>
+                    <input type="number" id="budget" name="budget" min="1000" step="500">
+                    <br><br>
+
+                    <label for="brief">Attach a project brief:</label>
+                    <input type="file" id="brief" name="brief">
+                    <br><br>
+
+                    <label for="colour">Preferred website colour:</label>
+                    <input type="color" id="colour" name="colour" value="#1f5fa8">
+                    <br><br>
+
+                    <label for="rating">How much do you like my portfolio? (1&ndash;10)</label>
+                    <input type="range" id="rating" name="rating" min="1" max="10" value="7">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <label for="reason">Reason for contacting me:</label>
+                    <select id="reason" name="reason" required>
+                        <optgroup label="Work">
+                            <option value="internship">Internship offer</option>
+                            <option value="freelance">Freelance project</option>
+                            <option value="job">Full-time job</option>
+                        </optgroup>
+                        <optgroup label="Study">
+                            <option value="group-project">Group project</option>
+                            <option value="tutoring">Tutoring</option>
+                        </optgroup>
+                        <option value="other">Other</option>
+                    </select>
+                    <br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+                    <br>
+
+                    <input type="checkbox" id="copy" name="copy" value="yes">
+                    <label for="copy">Send me a copy of this message</label>
+                </fieldset>
+
+                <button type="submit">Send Message</button>
+                <button type="reset">Clear</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Yabets Alelign. All rights reserved.</p>
+        <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+
+    <script>
+        // 1. Personal logo drawing
+        const canvas = document.getElementById('logo');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+            // Blue square background: x, y, width, height
+            ctx.fillStyle = "#1f5fa8";
+            ctx.fillRect(0, 0, 120, 120);
+
+            // White circle: centre x, centre y, radius, start angle, end angle
+            ctx.beginPath();
+            ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+            ctx.fillStyle = "white";
+            ctx.fill();
+
+            // Initials in the middle
+            ctx.fillStyle = "#1f5fa8";
+            ctx.font = "bold 36px Arial";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.fillText("YA", 60, 62);
+        }
+
+        // 2. Bar chart of skills (Lab 14 Your turn)
+        const chart = document.getElementById('skillsChart');
+        if (chart) {
+            const chartCtx = chart.getContext('2d');
+            const skillsData = [
+                { name: 'HTML', val: 0.8 },
+                { name: 'Python', val: 0.7 },
+                { name: 'JS', val: 0.2 },
+                { name: 'CSS', val: 0.5 }
+            ];
+            const maxBarHeight = 90;
+            const baselineY = 120;
+            const barWidth = 45;
+            const startX = 25;
+            const gap = 65;
+
+            chartCtx.font = "14px Arial";
+            chartCtx.textAlign = "center";
+
+            skillsData.forEach((skill, index) => {
+                const x = startX + index * gap;
+                const height = skill.val * maxBarHeight;
+                const y = baselineY - height;
+
+                chartCtx.fillStyle = "#1f5fa8";
+                chartCtx.fillRect(x, y, barWidth, height);
+
+                chartCtx.fillStyle = "#333333";
+                chartCtx.fillText(skill.name, x + barWidth / 2, baselineY + 18);
+            });
+        }
+    </script>
+</body>
+
+</html>

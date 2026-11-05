@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Details of every project built by Yabets Alelign, including calculator and library management system.">
+    <meta name="keywords"
+        content="Yabets Alelign, portfolio, software engineering, projects, Simple Calculator, Library Management System">
+    <meta name="author" content="Yabets Alelign">
+    <title>My Projects | Yabets Alelign</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Page navigation">
+            <p><a href="index.html">&larr; Back to Home</a></p>
+        </nav>
+        <h1>My Projects</h1>
+        <p>Details of every project I have built.</p>
+    </header>
+
+    <main>
+        <section id="summary">
+            <h2>Project Summary</h2>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <caption>Project Summary</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Project</th>
+                        <th scope="col">Language</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Simple Calculator</td>
+                        <td>Python</td>
+                        <td><time datetime="2024">2024</time></td>
+                        <td><a href="#calculator">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>Library Management System</td>
+                        <td>C++</td>
+                        <td><time datetime="2025">2025</time></td>
+                        <td><a href="#library">Details</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3" scope="row">Total projects</th>
+                        <td>2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <article id="calculator">
+            <h2>Simple Calculator</h2>
+            <img src="images/project-demo-poster.jpg" alt="Simple Calculator interface screenshot" width="400"
+                height="225">
+            <p>A calculator that adds, subtracts, multiplies and divides.</p>
+
+            <h3>Watch the demo</h3>
+            <video controls poster="images/project-demo-poster.jpg" width="640" height="360">
+                <source src="media/project-demo.mp4" type="video/mp4">
+                <source src="media/project-demo.webm" type="video/webm">
+                <track src="media/project-demo.vtt" kind="captions" srclang="en" label="English" default>
+                Your browser does not support the video tag.
+            </video>
+
+            <details>
+                <summary>How I built it</summary>
+                <ol>
+                    <li>Wrote down the four operations the program must support.</li>
+                    <li>Read two numbers and an operator from the user.</li>
+                    <li>Used if/elif to pick the operation.</li>
+                    <li>Handled division by zero with an error message.</li>
+                </ol>
+            </details>
+
+            <h3>Technologies</h3>
+            <ul>
+                <li>Python 3</li>
+                <li>VS Code</li>
+            </ul>
+        </article>
+
+        <article id="library">
+            <h2>Library Management System</h2>
+            <img src="images/project-movemate.png" alt="Library Management System screenshot" width="400" height="250">
+            <p>A console program for borrowing and returning books.</p>
+
+            <details>
+                <summary>How I built it</summary>
+                <ol>
+                    <li>Designed the data structures for books and borrowers in C++.</li>
+                    <li>Created file I/O operations to persist library inventory and checkout records.</li>
+                    <li>Implemented a console menu for searching, borrowing, and returning books.</li>
+                    <li>Handled edge cases like attempting to borrow unavailable copies.</li>
+                </ol>
+            </details>
+
+            <h3>Technologies</h3>
+            <ul>
+                <li>C++</li>
+                <li>Git and GitHub</li>
+            </ul>
+        </article>
+
+        <aside id="references">
+            <h2>Useful Reference</h2>
+            <p>Useful reference: <a href="https://www.w3.org/">W3C &mdash; HTML standards</a></p>
+            <p><a href="index.html#contact">Contact me</a></p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Yabets Alelign. All rights reserved.</p>
+        <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
+    </footer>
+</body>
+
+</html>

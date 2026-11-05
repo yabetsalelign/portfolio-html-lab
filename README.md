@@ -1,43 +1,69 @@
-# Personal Portfolio (Chapter 2 - Part II: Forms, Multimedia and HTML5)
+# Personal Portfolio
 
-This repository contains a portfolio implementing the **Chapter 2 (Part II) Forms, Multimedia and HTML5** lab guide (Labs 8-14). It is a static HTML project; the contact form has no server-side receiver, so its POST submission cannot deliver or store a message by itself.
+A personal portfolio built with HTML5 for the **Internet Programming I – Chapter 2, Part II: Forms, Multimedia and HTML5** assignment (Labs 8–14).
 
-- **Semantic HTML5 Structure (`index.html`)**: Complete implementation of `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, and `<footer>` with zero layout `<hr>` dividers and proper search metadata (`viewport`, `description`, `keywords`, `author`).
-- **Personal Branding & Logo (`<canvas>`)**: Programmatically drawn 120x120 canvas logo with brand background, circular badge, and personal initials (`YA`).
-- **Interactive "Hire Me" Modal (`<dialog>`)**: Native dialog triggered with `showModal()` and dismissed with `close()` or Esc.
-- **Audio Introduction (`<audio>`)**: Native audio markup references the local `media/intro.mp3` file. Playback was not verified in a browser during this correction pass.
-- **Multimedia Demo (`<video>` & `<track>`)**: `projects.html` references local MP4 and WebM sources, a poster, and English WebVTT captions. The two video files report different durations (about 30 seconds for MP4 and 5 seconds for WebM), so the shared 12-second caption track does not fit the WebM. Playback was not browser-tested.
-- **Embedded Content (`<iframe>`)**: YouTube embed in `<aside>` and OpenStreetMap embed of university campus in Contact. The YouTube player showed Error 153 in the supplied page capture; playback depends on the hosting environment supplying the referrer or client identification YouTube requires.
-- **Skill Levels (`<meter>` & Canvas Bar Chart)**: Semantic gauge meters for HTML, Python, JavaScript, and CSS, accompanied by an HTML5 Canvas bar chart.
-- **Degree Progress (`<progress>`)**: Native progress bar illustrating degree completion status.
-- **Collapsible Project Details (`<details>` & `<summary>`)**: Expandable "How I built it" implementation breakdowns on all project articles.
-- **Contact Form & Validation**: Contact form with 3 grouped `<fieldset>` blocks, `<legend>` tags, `<optgroup>` select options, `<textarea>`, pattern-validated phone number, file attachment, color picker, range slider, and `method="post"` submission to `thank-you.html`. No message is transmitted or stored without a server-side form receiver.
-- **Dates, Abbreviations & Entities**: `<time datetime="...">` tags, tooltipped `<abbr>` elements, and HTML entities (`&copy;`, `&nbsp;`, `&lt;`, `&gt;`, `&amp;`).
-- **Thank-You Page (`thank-you.html`)**: Semantic page explaining that it is a static confirmation only; it does not claim that a message was received.
-- **Password Input Demonstration**: A password field outside the contact form, with no `name` attribute, included only to demonstrate the input type.
-- **Canvas JavaScript (`canvas.js`)**: Deferred script draws the logo and skills chart while keeping the document body direct children as header, main, and footer.
+The project brings together my profile, education, featured software projects, and contact information while demonstrating the HTML5 elements and features covered in the lab guide.
 
-## Structure
-```
+## Featured Projects
+
+- **[StockFlow](https://github.com/yabetsalelign/Stockflow)** — Inventory and sales management application for wholesale workflows.
+- **[SuperDimm](https://github.com/yabetsalelign/superdimm)** — Telecom service management platform focused on customer requests and operational workflows.
+- **[Next](https://github.com/yabetsalelign/Next)** — Productivity application built around manageable tasks and flexible routines.
+
+Screenshots of the three applications are included in the portfolio.
+
+## HTML5 Features
+
+The assignment demonstrates:
+
+- Semantic page structure using `header`, `nav`, `main`, `section`, `article`, `aside`, and `footer`.
+- Form controls, labels, fieldsets, legends, validation attributes, and different input types.
+- Native audio and video elements, including WebVTT captions.
+- Embedded external content using `iframe`.
+- Interactive elements such as `dialog`, `details`, and `summary`.
+- Data indicators using `meter` and `progress`.
+- Canvas drawings and a JavaScript-generated skills chart.
+- Metadata, dates, abbreviations, and HTML character entities.
+
+## Project Structure
+
+```text
 portfolio/
 ├── index.html
-??? canvas.js
 ├── projects.html
 ├── thank-you.html
+├── canvas.js
 ├── README.md
-├── files/
-│   └── cv.pdf
 ├── images/
-│   ├── connect-banner.png
-│   ├── favicon.png
-│   ├── profile.jpg
-│   ├── project-bus-tracking.png
-│   ├── project-demo-poster.jpg
-│   ├── project-movemate.png
-│   └── schedule.jpg
+│   └── projects/
+│       ├── stockflow-home.png
+│       ├── superdimm-home.png
+│       └── next-home.png
 └── media/
     ├── intro.mp3
     ├── project-demo.mp4
-    ├── project-demo.vtt
-    └── project-demo.webm
+    ├── project-demo.webm
+    └── project-demo.vtt
 ```
+
+Other image and asset files are kept in their respective directories.
+
+## Running Locally
+
+No installation or build process is required.
+
+1. Download or clone the repository.
+2. Open `index.html` in a browser.
+3. Navigate between the portfolio and projects pages.
+
+A local development server can also be used to preview the project.
+
+## Notes and Limitations
+
+- This is a static HTML project. The contact form retains the required POST and multipart attributes, but there is no server-side endpoint to receive or store submissions.
+- The video files currently have different durations. The shared caption track extends beyond the shorter WebM version.
+- The YouTube embed may encounter playback restrictions depending on the hosting environment.
+- The audio and external embeds have not been fully verified through browser testing.
+- The degree progress indicator is illustrative and does not represent a calculated academic completion percentage.
+
+The project follows the assignment's HTML-only restriction; no CSS framework or external styling library is used.

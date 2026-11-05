@@ -25,10 +25,10 @@ const chart = document.getElementById('skillsChart');
 if (chart) {
     const chartCtx = chart.getContext('2d');
     const skillsData = [
-        { name: 'HTML', val: 0.8 },
-        { name: 'Python', val: 0.7 },
-        { name: 'JS', val: 0.2 },
-        { name: 'CSS', val: 0.5 }
+        { name: 'HTML/CSS', val: 0.9 },
+        { name: 'React', val: 0.85 },
+        { name: 'TS/JS', val: 0.85 },
+        { name: 'Tailwind', val: 0.8 }
     ];
     const maxBarHeight = 90;
     const baselineY = 120;
